@@ -8,6 +8,7 @@
     <meta name="project" content="age_guard v0.1.0">
     <title>AgeGuard — age_guard v0.1.0</title>
     <link rel="stylesheet" href="dist/elixir-0ab8a6a80ebaaa287431.css" />
+      <link rel="canonical" href="https://hexdocs.pm/age_guard/AgeGuard.html" />
     <script src="dist/sidebar_items-ca48b92e9c.js"></script>
       <script src="docs_config.js"></script>
     <script async src="dist/app-a225d03098e64fef431a.js"></script>
@@ -87,11 +88,11 @@ Useful when registering users.</p>
 </h2>
 
 <p>The package can be installed by adding <code class="inline">age_guard</code> to your list of dependencies in <code class="inline">mix.exs</code>:</p>
-<pre><code class="nohighlight makeup elixir"><span class="kd">def</span><span class="w"> </span><span class="nf">deps</span><span class="w"> </span><span class="k" data-group-id="8189437716-1">do</span><span class="w">
-</span><span class="p" data-group-id="8189437716-2">[</span><span class="w">
-  </span><span class="p" data-group-id="8189437716-3">{</span><span class="ss">:age_guard</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;~&gt; 0.1.0&quot;</span><span class="p" data-group-id="8189437716-3">}</span><span class="w">
-</span><span class="p" data-group-id="8189437716-2">]</span><span class="w">
-</span><span class="k" data-group-id="8189437716-1">end</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="kd">def</span><span class="w"> </span><span class="nf">deps</span><span class="w"> </span><span class="k" data-group-id="7245773213-1">do</span><span class="w">
+</span><span class="p" data-group-id="7245773213-2">[</span><span class="w">
+  </span><span class="p" data-group-id="7245773213-3">{</span><span class="ss">:age_guard</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;~&gt; 0.1.0&quot;</span><span class="p" data-group-id="7245773213-3">}</span><span class="w">
+</span><span class="p" data-group-id="7245773213-2">]</span><span class="w">
+</span><span class="k" data-group-id="7245773213-1">end</span></code></pre>
 <p>and running <a href="https://hexdocs.pm/mix/Mix.Tasks.Deps.Get.html"><code class="inline">mix deps.get</code></a> in your console to fetch from Hex.</p>
         </section>
 
@@ -135,22 +136,22 @@ Functions          </h1>
   </div>
   <section class="docstring">
 <p>Checks if enough years (min_age) have passed since given date.</p>
-<pre><code class="nohighlight makeup elixir"><span class="nc">AgeGuard</span><span class="o">.</span><span class="n">is_old_enough?</span><span class="p" data-group-id="2043603891-1">(</span><span class="n">day_of_birth</span><span class="p">,</span><span class="w"> </span><span class="n">month_of_birth</span><span class="p">,</span><span class="w"> </span><span class="n">year_of_birth</span><span class="p">,</span><span class="w"> </span><span class="n">required_age</span><span class="p" data-group-id="2043603891-1">)</span></code></pre>
+<pre><code class="nohighlight makeup elixir"><span class="nc">AgeGuard</span><span class="o">.</span><span class="n">is_old_enough?</span><span class="p" data-group-id="3930345498-1">(</span><span class="n">day_of_birth</span><span class="p">,</span><span class="w"> </span><span class="n">month_of_birth</span><span class="p">,</span><span class="w"> </span><span class="n">year_of_birth</span><span class="p">,</span><span class="w"> </span><span class="n">required_age</span><span class="p" data-group-id="3930345498-1">)</span></code></pre>
 <h3 id="is_old_enough?/4-examples" class="section-heading">
   <a href="#is_old_enough?/4-examples" class="hover-link"><span class="icon-link" aria-hidden="true"></span></a>
   Examples
 </h3>
 
-<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">AgeGuard</span><span class="o">.</span><span class="n">is_old_enough?</span><span class="p" data-group-id="3692082425-1">(</span><span class="s">&quot;1&quot;</span><span class="p">,</span><span class="s">&quot;5&quot;</span><span class="p">,</span><span class="s">&quot;2019&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">21</span><span class="p" data-group-id="3692082425-1">)</span><span class="w">
+<pre><code class="nohighlight makeup elixir"><span class="gp unselectable">iex&gt; </span><span class="nc">AgeGuard</span><span class="o">.</span><span class="n">is_old_enough?</span><span class="p" data-group-id="7953679403-1">(</span><span class="s">&quot;1&quot;</span><span class="p">,</span><span class="s">&quot;5&quot;</span><span class="p">,</span><span class="s">&quot;2019&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">21</span><span class="p" data-group-id="7953679403-1">)</span><span class="w">
 </span><span class="no">false</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">AgeGuard</span><span class="o">.</span><span class="n">is_old_enough?</span><span class="p" data-group-id="3692082425-2">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;March&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">2000</span><span class="p">,</span><span class="w"> </span><span class="mi">21</span><span class="p" data-group-id="3692082425-2">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">AgeGuard</span><span class="o">.</span><span class="n">is_old_enough?</span><span class="p" data-group-id="7953679403-2">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;March&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">2000</span><span class="p">,</span><span class="w"> </span><span class="mi">21</span><span class="p" data-group-id="7953679403-2">)</span><span class="w">
 </span><span class="no">false</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">AgeGuard</span><span class="o">.</span><span class="n">is_old_enough?</span><span class="p" data-group-id="3692082425-3">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">2000</span><span class="p">,</span><span class="w"> </span><span class="mi">18</span><span class="p" data-group-id="3692082425-3">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">AgeGuard</span><span class="o">.</span><span class="n">is_old_enough?</span><span class="p" data-group-id="7953679403-3">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">2000</span><span class="p">,</span><span class="w"> </span><span class="mi">18</span><span class="p" data-group-id="7953679403-3">)</span><span class="w">
 </span><span class="no">true</span><span class="w">
 
-</span><span class="gp unselectable">iex&gt; </span><span class="nc">AgeGuard</span><span class="o">.</span><span class="n">is_old_enough?</span><span class="p" data-group-id="3692082425-4">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Dec&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1995</span><span class="p">,</span><span class="w"> </span><span class="mi">18</span><span class="p" data-group-id="3692082425-4">)</span><span class="w">
+</span><span class="gp unselectable">iex&gt; </span><span class="nc">AgeGuard</span><span class="o">.</span><span class="n">is_old_enough?</span><span class="p" data-group-id="7953679403-4">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Dec&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1995</span><span class="p">,</span><span class="w"> </span><span class="mi">18</span><span class="p" data-group-id="7953679403-4">)</span><span class="w">
 </span><span class="no">true</span></code></pre>
   </section>
 </section>
