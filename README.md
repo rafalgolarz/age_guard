@@ -1,3 +1,6 @@
+[![Hex.pm](https://img.shields.io/hexpm/v/age_guard.svg?maxAge=2592000)](https://hex.pm/packages/age_guard)
+[![Downloads](https://img.shields.io/hexpm/dt/age_guard.svg?maxAge=3600)](https://hex.pm/packages/age_guard)
+
 # AgeGuard
 
 Verifies if a person born at a given date meets provided age requirements.
